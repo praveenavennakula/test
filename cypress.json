@@ -1,0 +1,13 @@
+{
+    "$schema": "https://on.cypress.io/cypress.schema.json",  
+
+    "chromeWebSecurity":false,
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+      "reportDir": "cypress/results/json",
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+ 
+}
