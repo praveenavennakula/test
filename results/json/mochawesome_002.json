@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-09-27T16:29:12.071Z",
+    "end": "2020-09-27T16:29:22.928Z",
+    "duration": 10857,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1c413ebd-2727-4ba3-87d9-a6e77366835c",
+      "title": "",
+      "fullFile": "cypress\\integration\\pages\\home\\sample.ts",
+      "file": "cypress\\integration\\pages\\home\\sample.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d0a486e8-e9ce-42da-90df-a49242fec437",
+          "title": "The Home Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Desktop View",
+              "fullTitle": "The Home Page Desktop View",
+              "timedOut": null,
+              "duration": 7436,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var tb2 = new toolbar_functions_1.Toolbar();\ntb2.vist_baseurl();\ncy.location().then(function (loc) {\n    console.log(loc);\n});\ncy.get(':nth-child(1) > .v-card > :nth-child(2) > .v-btn > .v-btn__content').click({ force: true });\ncy.log('our menu is clickable');\ncy.get('.xs12 > :nth-child(2) > .row > :nth-child(1) > .v-card > :nth-child(3) > .v-btn > .v-btn__content').click({ force: true });\ncy.log('HOW IT WORKS is clickable');\ncy.get(':nth-child(2) > .v-card > :nth-child(2) > .v-btn > .v-btn__content').click({ force: true });\ncy.log('KITCHENWARE is clickable');\ncy.get(':nth-child(2) > .v-card > :nth-child(3) > .v-btn > .v-btn__content').click({ force: true });\ncy.log('FAQ is clickable');\ncy.get('.xs12 > :nth-child(1) > .v-card__text > :nth-child(1) > .v-btn__content').click({ force: true });\ncy.log('facebook is clickable');\ncy.get('#iMenus').click();\ncy.log('explore menus is clickable');\n// cy.get(':nth-child(3) > .ma-0 > .v-btn').click({force:true});\n// cy.get(':nth-child(3) > .ma-0 > .v-btn > .v-btn__content').click({force:true});\n//cy.log('view more menu button is clickable')\n//cy.get('.v-card__actions > .ma-auto > .v-btn__content').click({force:true});\n//cy.log('subscribe is clickable')\n/*    cy.window().then((win) => {\n        console.log(win.location)\n               \n      })*/\n// cy.get('.v-overlay__scrim').click({multiple:true, force: true })\n//cy.get('v-overlay__content').click();\n//cy.get('.v-navigation-drawer__content').should('be.hidden')\n//cy.get('.v-list-item > .v-btn > .v-btn__content > .v-icon')\n//cy.get('aside[class=\"v-navigation-drawer v-navigation-drawer--absolute v-navigation-drawer--close v-navigation-drawer--is-mobile v-navigation-drawer--temporary theme--light green lighten-2\"]').click();\n//cy.get('.v-list-item > .v-btn > .v-btn__content > .v-icon').should('be.visible').click();\n//tb2.click_nav_draw_cont_desktop();",
+              "err": {},
+              "uuid": "50da1805-dd8a-4d08-a16f-8edbab122b5e",
+              "parentUUID": "d0a486e8-e9ce-42da-90df-a49242fec437",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "50da1805-dd8a-4d08-a16f-8edbab122b5e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7436,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
