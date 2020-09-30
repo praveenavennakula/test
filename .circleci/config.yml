@@ -37,6 +37,7 @@ jobs:
       - attach_workspace:
           at: ~/
       - run: tsc
+      - run: 
          name: Running cypress tests
           command: $(npm bin)/cypress run
       - store_artifacts:
