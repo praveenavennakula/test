@@ -34,8 +34,6 @@ jobs:
         environment:
           TERM: xterm
     steps:
-      - attach_workspace:
-          at: ~/
       - run: tsc
       - run: $(npm bin)/cypress run
       - store_artifacts:
