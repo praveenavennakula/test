@@ -1,8 +1,12 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
+  executors:
+  with-chrome:
+    docker:
+      - image: 'cypress/browsers:node12.6.0-chrome77'
 workflows:
   build:
     jobs:
-      - cypress/run:
-         install-command: npm install
+      - cypress/run
+         
